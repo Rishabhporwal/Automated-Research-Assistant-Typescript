@@ -1,0 +1,33 @@
+astra_db:
+  collection_name: "ecommercedata"
+
+embedding_model:
+  provider: "google"
+  model_name: "models/text-embedding-004"
+
+retriever:
+  top_k: 4
+
+llm:
+  groq:
+    provider: "groq"
+    model_name: "openai/gpt-oss-120b"
+    temperature: 0
+    max_output_tokens: 2048
+
+  google:
+    provider: "google"
+    model_name: "gemini-2.0-flash"
+    temperature: 0
+    max_output_tokens: 2048
+
+  openai:
+     provider: "openai"
+     model_name: "gpt-4o"
+     temperature: 0
+
+  ollama:
+    provider: "ollama"
+    model_name: "llama3"
+    temperature: 0.7
+    base_url: "http://localhost:11434"

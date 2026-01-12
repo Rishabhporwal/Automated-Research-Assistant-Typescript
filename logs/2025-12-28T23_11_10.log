@@ -1,0 +1,19 @@
+{"level":"info","message":"Initializing ApiKeyManager","module":"ApiKeyManager","timestamp":"2025-12-28T23:11:10.700Z"}
+{"level":"info","message":"Report service initialized successfully","module":"ReportService","timestamp":"2025-12-28T23:11:10.710Z"}
+{"keys":["astra_db","embedding_model","retriever","llm"],"level":"info","message":"Configuration loaded successfully","module":"ConfigLoader","path":"/Users/rishabhporwal/Desktop/Research_analyst_node js/config/configuration.yaml","timestamp":"2025-12-28T23:11:10.706Z"}
+{"level":"info","message":"YAML configuration loaded successfully","module":"ModelLoader","timestamp":"2025-12-28T23:11:10.706Z"}
+{"level":"info","message":"Server running on port 3000","module":"App","timestamp":"2025-12-28T23:11:10.709Z"}
+{"level":"warn","message":"OPENAI_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-28T23:11:10.701Z"}
+{"level":"info","message":"GOOGLE_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:11:10.701Z"}
+{"level":"info","message":"GROQ_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:11:10.701Z"}
+{"level":"info","message":"TAVILY_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:11:10.701Z"}
+{"level":"warn","message":"ANTHROPIC_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-28T23:11:10.702Z"}
+{"level":"info","message":"Loading LLM","model":"llama3","module":"ModelLoader","provider":"ollama","timestamp":"2025-12-28T23:11:10.706Z"}
+{"level":"info","message":"Starting report pipeline","module":"ReportService","thread_id":"4df061bd-0edd-4e5e-9765-bdc1ef520b7c","timestamp":"2025-12-28T23:12:44.749Z","topic":"genai"}
+{"level":"info","message":"Creating analyst personas","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:14:00.892Z","topic":"genai"}
+{"level":"info","message":"Starting report pipeline","module":"ReportService","thread_id":"2d74ed8b-2e55-409e-b98f-743b148a38e9","timestamp":"2025-12-28T23:15:30.416Z","topic":"genai"}
+{"level":"info","message":"Creating analyst personas","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:15:39.025Z","topic":"genai"}
+{"count":3,"level":"info","message":"Analysts created","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:16:07.562Z"}
+{"level":"info","message":"Writing report","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:16:08.106Z","topic":"genai"}
+{"level":"info","message":"Starting report pipeline","module":"ReportService","thread_id":"554c8062-0a96-4c5e-9942-a0ba78bd82e9","timestamp":"2025-12-28T23:16:18.522Z","topic":"genai"}
+{"level":"info","message":"Creating analyst personas","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:16:24.882Z","topic":"genai"}

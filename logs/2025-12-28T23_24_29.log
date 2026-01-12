@@ -1,0 +1,38 @@
+{"keys":["astra_db","embedding_model","retriever","llm"],"level":"info","message":"Configuration loaded successfully","module":"ConfigLoader","path":"/Users/rishabhporwal/Desktop/Research_analyst_node js/config/configuration.yaml","timestamp":"2025-12-28T23:24:29.892Z"}
+{"level":"info","message":"Initializing ApiKeyManager","module":"ApiKeyManager","timestamp":"2025-12-28T23:24:29.886Z"}
+{"level":"info","message":"Report service initialized successfully","module":"ReportService","timestamp":"2025-12-28T23:24:29.897Z"}
+{"level":"info","message":"YAML configuration loaded successfully","module":"ModelLoader","timestamp":"2025-12-28T23:24:29.892Z"}
+{"level":"info","message":"Server running on port 3000","module":"App","timestamp":"2025-12-28T23:24:29.896Z"}
+{"level":"warn","message":"OPENAI_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-28T23:24:29.887Z"}
+{"level":"info","message":"GOOGLE_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:24:29.887Z"}
+{"level":"info","message":"GROQ_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:24:29.887Z"}
+{"level":"info","message":"TAVILY_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:24:29.887Z"}
+{"level":"warn","message":"ANTHROPIC_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-28T23:24:29.888Z"}
+{"level":"info","message":"Loading LLM","model":"llama3","module":"ModelLoader","provider":"ollama","timestamp":"2025-12-28T23:24:29.893Z"}
+{"level":"info","message":"Starting report pipeline","module":"ReportService","thread_id":"cba33925-ccc4-42d7-99a9-69d545eed225","timestamp":"2025-12-28T23:24:51.383Z","topic":"gen ai in banking"}
+{"level":"info","message":"Creating analyst personas","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:24:55.280Z","topic":"gen ai in banking"}
+{"level":"info","message":"Creating analyst personas","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:25:14.844Z","topic":"gen ai in banking"}
+{"count":1,"level":"info","message":"Analysts created","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:25:24.275Z"}
+{"level":"info","message":"Writing report","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:25:24.276Z","topic":"gen ai in banking"}
+{"count":1,"level":"info","message":"Analysts created","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:25:54.900Z"}
+{"level":"info","message":"Writing report","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:25:54.901Z","topic":"gen ai in banking"}
+{"level":"info","message":"Report written successfully","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:26:18.483Z"}
+{"level":"info","message":"Generating introduction","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:26:18.484Z","topic":"gen ai in banking"}
+{"level":"info","message":"Report written successfully","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:26:32.858Z"}
+{"level":"info","message":"Generating introduction","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:26:32.859Z","topic":"gen ai in banking"}
+{"length":923,"level":"info","message":"Introduction generated","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:26:45.636Z"}
+{"level":"info","message":"Generating conclusion","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:26:45.637Z","topic":"gen ai in banking"}
+{"length":865,"level":"info","message":"Introduction generated","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:26:55.270Z"}
+{"level":"info","message":"Generating conclusion","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:26:55.270Z","topic":"gen ai in banking"}
+{"length":986,"level":"info","message":"Conclusion generated","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:27:05.376Z"}
+{"level":"info","message":"Workflow completed","module":"ReportService","thread_id":"cba33925-ccc4-42d7-99a9-69d545eed225","timestamp":"2025-12-28T23:27:05.377Z"}
+{"level":"info","message":"Finalizing report compilation","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:27:05.376Z"}
+{"level":"info","message":"Report finalized","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:27:05.376Z"}
+{"length":1062,"level":"info","message":"Conclusion generated","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:27:17.202Z"}
+{"level":"info","message":"Workflow completed","module":"ReportService","thread_id":"cba33925-ccc4-42d7-99a9-69d545eed225","timestamp":"2025-12-28T23:27:17.204Z"}
+{"level":"info","message":"Finalizing report compilation","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:27:17.203Z"}
+{"level":"info","message":"Report finalized","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:27:17.204Z"}
+{"format":"docx","level":"info","message":"Saving report","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:27:17.205Z","topic":"gen ai in banking"}
+{"level":"info","message":"Report saved successfully","module":"AutonomousReportGenerator","path":"/Users/rishabhporwal/Desktop/Research_analyst_node js/generated_report/gen_ai_in_banking_2025-12-28_23_27_17_205Z/gen_ai_in_banking_2025-12-28_23_27_17_205Z.docx","timestamp":"2025-12-28T23:27:17.232Z"}
+{"format":"pdf","level":"info","message":"Saving report","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:27:17.233Z","topic":"gen ai in banking"}
+{"level":"info","message":"Report saved successfully","module":"AutonomousReportGenerator","path":"/Users/rishabhporwal/Desktop/Research_analyst_node js/generated_report/gen_ai_in_banking_2025-12-28_23_27_17_233Z/gen_ai_in_banking_2025-12-28_23_27_17_233Z.pdf","timestamp":"2025-12-28T23:27:17.253Z"}

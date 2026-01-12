@@ -1,0 +1,22 @@
+{"level":"info","message":"Initializing ApiKeyManager","module":"ApiKeyManager","timestamp":"2025-12-29T01:12:37.067Z"}
+{"level":"info","message":"YAML configuration loaded successfully","module":"ModelLoader","timestamp":"2025-12-29T01:12:37.073Z"}
+{"level":"info","message":"Report service initialized successfully","module":"ReportService","timestamp":"2025-12-29T01:12:37.077Z"}
+{"level":"info","message":"Server running on port 3000","module":"App","timestamp":"2025-12-29T01:12:37.076Z"}
+{"level":"warn","message":"OPENAI_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-29T01:12:37.068Z"}
+{"level":"info","message":"GOOGLE_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-29T01:12:37.068Z"}
+{"level":"info","message":"GROQ_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-29T01:12:37.068Z"}
+{"level":"info","message":"TAVILY_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-29T01:12:37.069Z"}
+{"level":"warn","message":"ANTHROPIC_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-29T01:12:37.069Z"}
+{"level":"info","message":"Loading LLM","model":"llama3","module":"ModelLoader","provider":"ollama","timestamp":"2025-12-29T01:12:37.073Z"}
+{"level":"info","message":"Starting report pipeline","module":"ReportService","thread_id":"d0d31476-74a0-4f5c-ae38-fef0748a51f4","timestamp":"2025-12-29T01:12:53.665Z","topic":"indore"}
+{"level":"info","message":"Creating analyst personas","module":"AutonomousReportGenerator","timestamp":"2025-12-29T01:12:56.961Z","topic":"indore"}
+{"analysts":[{"affiliation":"Indore Chamber of Commerce and Industry","description":"With a background in urban planning, Ritu has been analyzing the impact of tourism on local economies. She is well-versed in data analysis and policy recommendations.","name":"Ritu Chaudhary","role":"Senior Researcher"},{"affiliation":"Indian Institute of Technology Indore (IIT-I)","description":"As a food scientist, Rohan has been exploring the potential of local ingredients in innovative products. His expertise lies in sensory evaluation and product development.","name":"Dr. Rohan Jain","role":"Research Scientist"},{"affiliation":"Devi Ahilya University (DAVV)","description":"With a focus on environmental sustainability, Priya has been studying the effects of urbanization on Indore's ecosystems. Her expertise lies in waste management and green infrastructure.","name":"Dr. Priya Singh","role":"Assistant Professor"}],"count":3,"level":"info","message":"Analysts created","module":"AutonomousReportGenerator","timestamp":"2025-12-29T01:14:13.106Z"}
+{"level":"info","message":"Writing report","module":"AutonomousReportGenerator","timestamp":"2025-12-29T01:14:14.725Z","topic":"indore"}
+{"level":"info","message":"Report written successfully","module":"AutonomousReportGenerator","timestamp":"2025-12-29T01:14:45.974Z"}
+{"level":"info","message":"Generating introduction","module":"AutonomousReportGenerator","timestamp":"2025-12-29T01:14:45.975Z","topic":"indore"}
+{"length":758,"level":"info","message":"Introduction generated","module":"AutonomousReportGenerator","timestamp":"2025-12-29T01:15:00.865Z"}
+{"level":"info","message":"Generating conclusion","module":"AutonomousReportGenerator","timestamp":"2025-12-29T01:15:00.866Z","topic":"indore"}
+{"length":1512,"level":"info","message":"Conclusion generated","module":"AutonomousReportGenerator","timestamp":"2025-12-29T01:15:18.459Z"}
+{"level":"info","message":"Workflow completed","module":"ReportService","thread_id":"d0d31476-74a0-4f5c-ae38-fef0748a51f4","timestamp":"2025-12-29T01:15:21.553Z"}
+{"level":"info","message":"Finalizing report compilation","module":"AutonomousReportGenerator","timestamp":"2025-12-29T01:15:18.460Z"}
+{"level":"info","message":"Report finalized","module":"AutonomousReportGenerator","timestamp":"2025-12-29T01:15:18.460Z"}

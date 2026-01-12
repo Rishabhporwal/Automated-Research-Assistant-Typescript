@@ -1,0 +1,13 @@
+{"level":"info","message":"Report service initialized successfully","module":"ReportService","timestamp":"2025-12-28T23:17:38.133Z"}
+{"level":"info","message":"Server running on port 3000","module":"App","timestamp":"2025-12-28T23:17:38.132Z"}
+{"level":"info","message":"YAML configuration loaded successfully","module":"ModelLoader","timestamp":"2025-12-28T23:17:38.127Z"}
+{"level":"info","message":"Initializing ApiKeyManager","module":"ApiKeyManager","timestamp":"2025-12-28T23:17:38.120Z"}
+{"level":"info","message":"Loading LLM","model":"llama3","module":"ModelLoader","provider":"ollama","timestamp":"2025-12-28T23:17:38.129Z"}
+{"level":"warn","message":"OPENAI_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-28T23:17:38.121Z"}
+{"level":"info","message":"GOOGLE_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:17:38.122Z"}
+{"level":"info","message":"GROQ_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:17:38.122Z"}
+{"level":"info","message":"TAVILY_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:17:38.122Z"}
+{"level":"warn","message":"ANTHROPIC_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-28T23:17:38.122Z"}
+{"level":"info","message":"Starting report pipeline","module":"ReportService","thread_id":"6eb56679-0cca-47ef-a072-4328cd5aa51c","timestamp":"2025-12-28T23:18:17.666Z","topic":"asdsa"}
+{"level":"info","message":"Creating analyst personas","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:18:23.471Z","topic":"asdsa"}
+{"level":"info","message":"Creating analyst personas","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:19:40.682Z","topic":"asdsa"}

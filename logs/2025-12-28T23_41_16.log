@@ -1,0 +1,15 @@
+{"keys":["astra_db","embedding_model","retriever","llm"],"level":"info","message":"Configuration loaded successfully","module":"ConfigLoader","path":"/Users/rishabhporwal/Desktop/Research_analyst_node js/config/configuration.yaml","timestamp":"2025-12-28T23:41:16.432Z"}
+{"level":"info","message":"Report service initialized successfully","module":"ReportService","timestamp":"2025-12-28T23:41:16.436Z"}
+{"level":"info","message":"Initializing ApiKeyManager","module":"ApiKeyManager","timestamp":"2025-12-28T23:41:16.427Z"}
+{"level":"info","message":"YAML configuration loaded successfully","module":"ModelLoader","timestamp":"2025-12-28T23:41:16.433Z"}
+{"level":"info","message":"Server running on port 3000","module":"App","timestamp":"2025-12-28T23:41:16.436Z"}
+{"level":"warn","message":"OPENAI_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-28T23:41:16.428Z"}
+{"level":"info","message":"GOOGLE_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:41:16.428Z"}
+{"level":"info","message":"GROQ_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:41:16.428Z"}
+{"level":"info","message":"TAVILY_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:41:16.428Z"}
+{"level":"warn","message":"ANTHROPIC_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-28T23:41:16.428Z"}
+{"level":"info","message":"Loading LLM","model":"llama3","module":"ModelLoader","provider":"ollama","timestamp":"2025-12-28T23:41:16.433Z"}
+{"level":"info","message":"Starting report pipeline","module":"ReportService","thread_id":"1d278bb8-7eba-4c25-b9c9-fddf77cf59ba","timestamp":"2025-12-28T23:41:29.396Z","topic":"Rishabh Porwal"}
+{"level":"info","message":"Creating analyst personas","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:41:29.397Z","topic":"Rishabh Porwal"}
+{"analysts":[{"affiliation":"AI Research Institute","description":"General AI research analyst","name":"Default Analyst","role":"Research Analyst"}],"count":1,"level":"info","message":"Analysts created","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:42:24.206Z"}
+{"level":"info","message":"Writing report","module":"AutonomousReportGenerator","timestamp":"2025-12-28T23:42:43.070Z","topic":"Rishabh Porwal"}

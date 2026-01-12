@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Report Progress | Research Analyst</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    
+    .topic {
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+    
+    .subtitle {
+      color: #777;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    
+    .error {
+      background: #fee;
+      color: #c33;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border-left: 4px solid #c33;
+    }
+    
+    .form-group {
+      margin-bottom: 25px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+      font-weight: 500;
+    }
+    
+    textarea {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 16px;
+      min-height: 150px;
+      resize: vertical;
+      font-family: inherit;
+    }
+    
+    textarea:focus {
+      outline: none;
+      border-color: #43e97b;
+    }
+    
+    input[type="hidden"] {
+      display: none;
+    }
+    
+    button {
+      padding: 14px 40px;
+      background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    
+    button:hover {
+      transform: translateY(-2px);
+    }
+    
+    .note {
+      background: #f0f9ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      color: #0369a1;
+      border-left: 4px solid #0ea5e9;
+    }
+    
+    .downloads {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 2px solid #e0e0e0;
+    }
+    
+    h3 {
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    
+    .download-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      transition: transform 0.2s;
+    }
+    
+    .download-btn:hover {
+      transform: translateY(-2px);
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #43e97b;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>📊 Report Progress</h2>
+      <div class="topic">Topic: {{topic}}</div>
+      
+      {{error}}
+      
+      {{#if pdf_path}}
+        <div class="downloads">
+          <h3>✅ Report Ready!</h3>
+          <p class="subtitle">Your report has been generated successfully.</p>
+          <div>
+            <a href="/download/{{doc_path}}" class="download-btn">📄 Download DOCX</a>
+            <a href="/download/{{pdf_path}}" class="download-btn">📘 Download PDF</a>
+          </div>
+          <p class="note">Files will be downloaded automatically when you click the links above.</p>
+        </div>
+      {{else}}
+        <p class="subtitle">Your AI-generated report is ready! You can refine it below 👇</p>
+        
+        <form method="post" action="/submit_feedback">
+          <input type="hidden" name="topic" value="{{topic}}">
+          <input type="hidden" name="thread_id" value="{{thread_id}}">
+          
+          <div class="form-group">
+            <label for="feedback">Feedback & Refinements</label>
+            <textarea 
+              id="feedback" 
+              name="feedback" 
+              placeholder="Enter your feedback here... (e.g., Add more technical details, Include recent statistics, Focus on practical applications)"
+            >{{feedback}}</textarea>
+          </div>
+          
+          <button type="submit">Submit Feedback & Regenerate</button>
+        </form>
+        
+        <div class="note">
+          💡 <strong>Tips for effective feedback:</strong><br>
+          • Be specific about what you want to add or change<br>
+          • Mention if you want more technical details or simpler explanations<br>
+          • Request specific data points or examples<br>
+          • Ask for comparisons or contrasts with related topics
+        </div>
+      {{/if}}
+      
+      <a href="/dashboard" class="back-link">← Back to Dashboard</a>
+    </div>
+  </div>
+</body>
+</html>

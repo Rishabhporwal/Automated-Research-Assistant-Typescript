@@ -1,0 +1,11 @@
+{"keys":["astra_db","embedding_model","retriever","llm"],"level":"info","message":"Configuration loaded successfully","module":"ConfigLoader","path":"/Users/rishabhporwal/Desktop/Research_analyst_node js/config/configuration.yaml","timestamp":"2025-12-29T01:16:23.005Z"}
+{"level":"info","message":"Report service initialized successfully","module":"ReportService","timestamp":"2025-12-29T01:16:23.010Z"}
+{"level":"info","message":"Initializing ApiKeyManager","module":"ApiKeyManager","timestamp":"2025-12-29T01:16:22.999Z"}
+{"level":"warn","message":"OPENAI_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-29T01:16:23.000Z"}
+{"level":"info","message":"GOOGLE_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-29T01:16:23.001Z"}
+{"level":"info","message":"GROQ_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-29T01:16:23.001Z"}
+{"level":"info","message":"TAVILY_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-29T01:16:23.001Z"}
+{"level":"warn","message":"ANTHROPIC_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-29T01:16:23.001Z"}
+{"level":"info","message":"Starting report pipeline","module":"ReportService","thread_id":"7a54e5af-9881-4785-8175-73cc7b236758","timestamp":"2025-12-29T01:16:45.941Z","topic":"rishabh"}
+{"level":"info","message":"Workflow completed","module":"ReportService","thread_id":"7a54e5af-9881-4785-8175-73cc7b236758","timestamp":"2025-12-29T01:18:45.739Z"}
+{"level":"info","message":"Workflow completed","module":"ReportService","thread_id":"7a54e5af-9881-4785-8175-73cc7b236758","timestamp":"2025-12-29T01:19:02.757Z"}

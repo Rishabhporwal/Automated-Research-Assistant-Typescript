@@ -1,0 +1,11 @@
+{"keys":["astra_db","embedding_model","retriever","llm"],"level":"info","message":"Configuration loaded successfully","module":"ConfigLoader","path":"/Users/rishabhporwal/Desktop/Research_analyst_node js/config/configuration.yaml","timestamp":"2025-12-28T23:50:49.325Z"}
+{"level":"info","message":"Report service initialized successfully","module":"ReportService","timestamp":"2025-12-28T23:50:49.330Z"}
+{"level":"info","message":"Initializing ApiKeyManager","module":"ApiKeyManager","timestamp":"2025-12-28T23:50:49.319Z"}
+{"level":"info","message":"YAML configuration loaded successfully","module":"ModelLoader","timestamp":"2025-12-28T23:50:49.326Z"}
+{"level":"info","message":"Server running on port 3000","module":"App","timestamp":"2025-12-28T23:50:49.329Z"}
+{"level":"warn","message":"OPENAI_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-28T23:50:49.320Z"}
+{"level":"info","message":"GOOGLE_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:50:49.320Z"}
+{"level":"info","message":"GROQ_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:50:49.321Z"}
+{"level":"info","message":"TAVILY_API_KEY loaded successfully from environment","module":"ApiKeyManager","timestamp":"2025-12-28T23:50:49.321Z"}
+{"level":"warn","message":"ANTHROPIC_API_KEY is missing in environment variables","module":"ApiKeyManager","timestamp":"2025-12-28T23:50:49.321Z"}
+{"level":"info","message":"Loading LLM","model":"llama3","module":"ModelLoader","provider":"ollama","timestamp":"2025-12-28T23:50:49.326Z"}

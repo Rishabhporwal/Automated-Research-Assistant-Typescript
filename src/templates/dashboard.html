@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard | Research Analyst</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .header {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .welcome {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      color: #333;
+      font-size: 28px;
+    }
+    
+    .user {
+      background: #4facfe;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+    
+    .error {
+      background: #fee;
+      color: #c33;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border-left: 4px solid #c33;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      color: #333;
+      margin-bottom: 25px;
+      font-size: 22px;
+    }
+    
+    .form-group {
+      margin-bottom: 25px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    
+    input {
+      width: 100%;
+      padding: 14px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+    
+    input:focus {
+      outline: none;
+      border-color: #4facfe;
+    }
+    
+    button {
+      padding: 14px 40px;
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    
+    button:hover {
+      transform: translateY(-2px);
+    }
+    
+    .description {
+      color: #666;
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+    
+    .logout {
+      display: inline-block;
+      margin-top: 20px;
+      color: #4facfe;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .logout:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="welcome">
+        <h1>🤖 Research Analyst Dashboard</h1>
+        <div class="user">Welcome, {{user}}</div>
+      </div>
+      
+      {{error}}
+      
+      <div class="description">
+        Generate comprehensive research reports using AI. Enter a topic below to get started.
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>📄 Generate New Report</h2>
+      
+      <form method="post" action="/generate_report">
+        <div class="form-group">
+          <label for="topic">Research Topic</label>
+          <input 
+            type="text" 
+            id="topic" 
+            name="topic" 
+            required 
+            placeholder="e.g., Impact of AI on Healthcare, Future of Renewable Energy, etc."
+          >
+        </div>
+        
+        <button type="submit">Generate Report</button>
+      </form>
+      
+      <a href="/" class="logout">← Logout</a>
+    </div>
+  </div>
+</body>
+</html>
