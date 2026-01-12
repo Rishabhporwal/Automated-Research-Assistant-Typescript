@@ -25,8 +25,11 @@ A complete TypeScript/Node.js port of the Python research analyst application us
 ```bash
 git clone <repository-url>
 cd research-analyst-ts
+
 npm install
+
 cp .env.example .env
+
 # Edit .env with your API keys
 # Edit config/configuration.yaml for LLM preferences
 
